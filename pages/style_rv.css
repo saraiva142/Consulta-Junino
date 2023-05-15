@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.004em;
+    color: #53433e;
+}
+
+html,
+body {
+    background-color: #beb19e;
+}
+
+img {
+    width: 50%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #beb19e;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.navbar-item {
+    padding: 2em;
+}
+
+.menu-toggle {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hamburguer {
+    position: relative;
+    top: -46px;
+    width: 40px;
+    height: 20px;
+}
+
+.hamburguer b {
+    display: block;
+    position: relative;
+    height: 0.1em;
+    width: 40px;
+    background: #53433e;
+}
+
+.hamburguer b:first-child {
+    top: 48px;
+}
+
+.hamburguer b:nth-child(2) {
+    top: 54px;
+    width: 48px;
+}
+
+.hamburguer b:nth-child(3) {
+    top: 60px;
+}
+
+.site-logo {
+    font-family: "Grifinito L";
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.menu-cart {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-wrapper {
+    display: flex;
+    height: 100%;
+    background: #beb19e;
+    padding: 2%;
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 2;
+    height: 100%;
+}
+
+img {
+    position: relative;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-description {
+    padding: 3em;
+}
+
+.product-title {
+    font-family: "Grifinito L";
+    font-size: 6em;
+    line-height: 0.8em;
+}
+
+.product-price {
+    font-family: "Grifinito L";
+    font-size: 4em;
+    margin-top: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(max-width: 900px){
+    .site-logo {
+        font-size: 1em;
+    }
+    .product-title {
+        font-size: 2em;
+    }
+    .product-price {
+        font-size: 2em;
+    }
+}
